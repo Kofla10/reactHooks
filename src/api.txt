@@ -1,0 +1,2 @@
+descripcion:  https://fakestoreapi.com/
+ url api: https://fakestoreapi.com 
