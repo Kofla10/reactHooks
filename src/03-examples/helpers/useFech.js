@@ -6,11 +6,12 @@ const useFech = async(num) => {
     const resp = await fetch(url)
     const data = await resp.json();
 
-    console.data(data)
 
-    return {
-        data
-    }
+
+    return  {
+        ...data
+    };
+    
 }
 
 export default useFech
