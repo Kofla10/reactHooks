@@ -8,6 +8,9 @@ import { CounterWithHooks } from './01-useState/CounterWithHooks'
 import { SimpleForm } from './02-useEffect/SimpleForm'
 import { FormWithCustonHook } from './02-useEffect/FormWithCustonHook'
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks'
+import MemoHook from './07-memohook copy/MemoHook'
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
@@ -15,7 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <CounterApp/> */}
     {/* <CounterWithHooks/> */}
     {/* <FormWithCustonHook/> */}
-    <MultipleCustomHooks/>
+    {/* <MultipleCustomHooks/> */}
+    <MemoHook/>
     </>
   // </React.StrictMode>,
 )
