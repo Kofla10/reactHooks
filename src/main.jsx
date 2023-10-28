@@ -7,7 +7,9 @@ import CounterApp from './01-useState/CounterApp'
 import { CounterWithHooks } from './01-useState/CounterWithHooks'
 import { SimpleForm } from './02-useEffect/SimpleForm'
 import { FormWithCustonHook } from './02-useEffect/FormWithCustonHook'
-import MultipleCustomHooks from './03-examples/MultipleCustomHooks'
+import MultipleCustomHooks from './04-examples/MultipleCustomHooks'
+import { FocusScreen } from './05-useRef/FocusScreen'
+import Layout from './05-useLaoutEffect/Layout'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
@@ -15,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <CounterApp/> */}
     {/* <CounterWithHooks/> */}
     {/* <FormWithCustonHook/> */}
-    <MultipleCustomHooks/>
+    {/* <MultipleCustomHooks/> */}
+    {/* <FocusScreen/> */}
+    <Layout/>
     </>
   // </React.StrictMode>,
 )
