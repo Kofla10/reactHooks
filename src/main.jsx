@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-import MemoHook from './07-memohook/MemoHook'
+import Padre from './07-tarea-memo/Padre'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MemoHook/>
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <Padre/>
+  // </React.StrictMode>,
 )

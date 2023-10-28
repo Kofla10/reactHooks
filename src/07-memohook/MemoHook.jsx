@@ -16,16 +16,17 @@ const MemoHook = () => {
     // useMemo(() => heavyStuff(counter), [counter])
     //el useMemo, memoriza valores
     // este ejemplo va memorizar el valor que retorna la funcion heavyStuff y solo lo reprocesa si el counter cambia
-    const memorizeValue = useMemo(() => heavyStuff(counter), [counter])
+    const memorizeValue = useMemo(() => heavyStuff(counter), [counter]);
+    // recalcula el valor si el valor del parametro que le pasamos, en este caso counter
 
   return (
     <>
         <h1>Counter: <small>{counter}</small> </h1>
         <hr />
-        <h4>{heavyStuff(counter)}</h4>
+        <h4>{heavyStuff(memorizeValue)}</h4>
         <button
             className='btn btn-primaty'
-            onClick={() => handleIncrementar(1)}
+            onClick={() => handleIncrementar(100)}
         >
             +1
         </button>
