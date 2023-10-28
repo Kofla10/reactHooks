@@ -2,20 +2,11 @@ import React, {useState, useEffect} from 'react'
 import useFech from './helpers/useFech'
 import GetCard from './GetCard';
 
-const MultipleCustomHooks = () => {
+const Layout = () => {
 
-
-    const [product, setProdct] = useState([]);
     const [num, setNum] = useState(1);
 
-    const getPost = async () => {
-      const newProduct = await useFech(num);
-      setProdct(newProduct);
-    }
-
-    useEffect(() => {
-        getPost();
-    }, [num]);
+    const {product} = useFech(num);
 
     const handleSum = () => {
       if(num >=20){
@@ -41,9 +32,9 @@ const MultipleCustomHooks = () => {
           <button onClick={handleResta} className='btn btn-primary'> -1</button>
           <button onClick={handleSum} className='btn btn-primary'> +1</button>
 
-          <GetCard key={product.id} product ={product}/>
+          <GetCard  product={product}/>
       </>
   )
 }
 
-export default MultipleCustomHooks
+export default Layout

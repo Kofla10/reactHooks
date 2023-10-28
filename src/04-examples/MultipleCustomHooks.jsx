@@ -4,18 +4,11 @@ import GetCard from './GetCard';
 
 const MultipleCustomHooks = () => {
 
-
-    const [product, setProdct] = useState([]);
     const [num, setNum] = useState(1);
 
-    const getPost = async () => {
-      const newProduct = await useFech(num);
-      setProdct(newProduct);
-    }
+    const {product} = useFech(num);
+    console.log('camilo', product);
 
-    useEffect(() => {
-        getPost();
-    }, [num]);
 
     const handleSum = () => {
       if(num >=20){
@@ -41,7 +34,7 @@ const MultipleCustomHooks = () => {
           <button onClick={handleResta} className='btn btn-primary'> -1</button>
           <button onClick={handleSum} className='btn btn-primary'> +1</button>
 
-          <GetCard key={product.id} product ={product}/>
+          <GetCard  product={product}/>
       </>
   )
 }

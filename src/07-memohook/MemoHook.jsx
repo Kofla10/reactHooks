@@ -23,13 +23,13 @@ const MemoHook = () => {
         <h1>Counter: <small>{counter}</small> </h1>
         <hr />
         <h4>{heavyStuff(counter)}</h4>
-        <button 
+        <button
             className='btn btn-primaty'
             onClick={() => handleIncrementar(1)}
         >
             +1
         </button>
-        <button className='btn btn-primary' onClick={() =>setShow(!show)} > 
+        <button className='btn btn-primary' onClick={() =>setShow(!show)} >
             Show/Hide {JSON.stringify(show)}
         </button>
     </>
